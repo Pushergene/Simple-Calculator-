@@ -1,23 +1,29 @@
 #include <iostream>
-#include <string>
-#include <vector>
 using namespace std;
 int main() {
 int a;
 int b;
 char c;
-cout << "Gib deine Zahlen ein!" << endl;
-cin >> a;
-cin >> b;
-cout << "Die Rechenformel, bitte." << endl;
-cin >> c;
+cout << "Geben Sie bitte die Zahlen unten ein!" << endl;
+cin >> a >> c >> b;
 switch (c) {
 case '+':
-cout << a << " + " << b << " ergeben " <<  a+b << endl;
+cout << "Das Ergebnis von " << a << c << b << " lautet " << a+b;
 break;
 case '-':
-cout << a << "-" << b << " ergeben " << a-b << endl;
+cout << "Das Ergebnis von " << a << c << b << " lautet " << a-b;
 break;
+case '*':
+cout << "Das Ergebnis von " << a << c << b << " lautet " << a*b;
+break;
+case '/':
+cout << "Das Ergebnis von " << a << c << b << " lautet " << a/b;
+break;
+case '%':
+cout << "Das Ergebnis von " << a << c << b << " lautet " << a%b;
+break;
+default:
+cout << "Da hat etwas nicht geklappt. " << endl;
 }
 return 0;
 }
